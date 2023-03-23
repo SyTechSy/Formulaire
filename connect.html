@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-global">
+            <!-- nom de la page -->
+        <div class="name">
+            <h1>Connection</h1>
+        </div>
+        <!-- bars -->
+        <div class="bars"></div>
+
+        <!-- nom de la formulaire -->
+        <div class="form-container">
+            <form class="form">
+                <!-- côté email -->
+                <label for="nom">Nom d'utilisateur</label> <br>
+                <input type="text" id="nom" placeholder="nom@example.com"> <br>
+                
+                <!-- côté motde passe -->
+                <label for="prenom">Mot de passe</label> <br>
+                <input type="text" id="prenom" placeholder="*************"> <br>
+    
+                <!-- côté inscription -->
+                <div class="submit">
+                    <a class="lien" href="accueil.html">Se connecter</a>
+                </div>
+                <!-- style de submit -->
+                <style>
+                    .submit a {
+                        color: #fff;
+                        padding: 7px 170px;
+                    }
+                    
+                    @media screen and (max-width: 760px) {
+                        .submit a {
+                            color: #fff;
+                            padding: 7px 122px;
+                        }
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        .submit a {
+                            padding: 7px 50px;
+                        }
+
+                        .info-ins {
+                            font-size: 10px;
+                        }
+                    }
+
+                    @media screen and (max-width: 300px) {
+                        .submit a {
+                            padding: 5px 8px;
+                        }
+
+                        .info-ins p{
+                            font-size: 7px;
+                        }
+                    }
+                </style>
+                
+            </form>
+        </div>
+        <div class="info-ins">
+            <p>Avez vous déjâ un compte. <a href="index.html">Inscrivez-vous !</a></p>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

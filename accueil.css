@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECECEC;
+}
+
+nav {
+    height: 80px;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #fff;
+    padding-left: 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+nav ul li a {
+    color: #ececece7;
+    padding: 6px 20px;
+    text-decoration: none;
+    line-height: 1px;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+    transition: all .5s ease;
+
+}
+
+.contenu h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.btn-ins {
+    position: absolute;
+    bottom: 80px;
+    left: 20%;
+}
+
+.btn-con {
+    position: absolute;
+    bottom: 80px;
+    right: 20%;
+}
+
+.btn-con a,
+.btn-ins a{
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #035ADE;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    
+}
+
+.icon{
+    display: none;
+}
+
+button {
+    border: none;
+}
+
+@media screen and (max-width: 780px) {
+
+    nav ul{
+        display: none;
+    }
+
+    .contenu h2 {
+        font-size: 20px;
+    }
+
+    .icon{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        margin-right: 35px;
+        cursor: pointer;
+    }
+}
